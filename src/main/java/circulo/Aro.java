@@ -53,10 +53,18 @@ public class Aro {
     private int coordenadaY;
     private double radio;
     
-    
+    /**
+     *Constructor vacio
+     */
     public Aro() {
     }
 
+    /**
+     * Constructo de aro con parametros
+     * @param valorX
+     * @param valorY
+     * @param valorRadio
+     */
     public Aro(int valorX, int valorY, double valorRadio) {
         coordenadaX = valorX;
         coordenadaY = valorY;
@@ -64,24 +72,26 @@ public class Aro {
         
     }
 
-
-
-
-
-
-    
-
-
-
-
+    /**
+     *metodo para obter a diametro
+     * @return 
+     */
     public double obterDiametro() {
         return getRadio() * 2;
     }
 
+    /**
+     * metodo para obter a circunferencia
+     * @return 
+     */
     public double obterCircunferencia() {
         return Math.PI * obterDiametro();
     }
 
+    /**
+     *metodo para obter a superficie
+     * @return 
+     */
     public double obterSuperficie() {
         return Math.PI * getRadio() * getRadio();
     }
@@ -91,6 +101,11 @@ public class Aro {
         return "Centro = [" + getCoordenadaX() + "," + getCoordenadaY() + "]; Radio = " + getRadio();
     }
 
+    /**
+     * metodo que move o centro do aro
+     * @param trasladarX
+     * @param trasladarY
+     */
     public void trasladarCentro(int trasladarX, int trasladarY){
         setCoordenadaX(getCoordenadaX() + trasladarX);
         setCoordenadaY(getCoordenadaY() + trasladarY);
