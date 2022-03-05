@@ -66,8 +66,8 @@ public class Aro {
         return "Centro = [" + coordenadaX + "," + y + "]; Radio = " + coordenadaY;
     }
 
-    public void trasladarCentro(int trasladarx, int trasladary){
-        coordenadaX=coordenadaX + trasladarx;
-        y=y + trasladary;
+    public void trasladarCentro(int trasladarX, int trasladarY){
+        coordenadaX=coordenadaX + trasladarX;
+        y=y + trasladarY;
     }
 }
