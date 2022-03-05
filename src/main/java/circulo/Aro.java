@@ -47,7 +47,7 @@ public class Aro {
     public void setRadio(double radio) {
        this.radio = radio;
     }
-    private static final double LIMITERADIO = 0.0;
+
     
     private int coordenadaX;
     private int coordenadaY;

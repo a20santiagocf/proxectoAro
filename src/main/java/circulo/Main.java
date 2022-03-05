@@ -21,8 +21,7 @@ public class Main {
         saida+="\nA circunferencia é "+dousDixitos.format(aro.obterCircunferencia());
         saida+="\nA área é "+dousDixitos.format(aro.obterSuperficie());
         System.out.println(saida);
-        
-        System.out.println(saida);
+
         System.exit(0);
     }
 
